@@ -1,12 +1,12 @@
 ---
 applications:
-- name: emojicf
+- name: emojicfpvranpura1947
   path: emoji
   buildpack: nodejs_buildpack
   memory: 128M
   services:  
   - emojicf-uaa
-- name: emojicfapr  
+- name: emojicfpvranpura1947
   path: appRouter
   buildpack: nodejs_buildpack
   memory: 128M
@@ -14,7 +14,7 @@ applications:
     destinations: >
       [
         {"name":"emoji-dest",
-         "url":"https://emojicf.cfapps.eu10.hana.ondemand.com",
+         "url":"https://pvranpura1947.cfapps.eu10.hana.ondemand.com",
          "forwardAuthToken": true}
       ]
   services:
